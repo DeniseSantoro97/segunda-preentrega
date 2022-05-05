@@ -1,0 +1,1223 @@
+* {
+    box-sizing: border-box;
+}
+
+/* INDEX START*/
+
+.logo {
+    font-family: 'Ms Madi', cursive;
+    font-size: 4em;
+}
+
+h1 { font-size: 3em;
+    font-family: 'Ms Madi', cursive;}
+h2 { font-size: 2.5em;
+    font-family: 'Ms Madi', cursive;}
+h3 { font-size: 2em;
+    font-family: 'Ms Madi', cursive;}
+p { font-size: 1.25em;}
+ul { list-style: none;}
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid #b86969;
+    box-shadow: 2px 2px 10px #b86969;
+    color:aliceblue;
+    background-color: #b88cae;
+}
+
+button:hover{
+    background-color: #d83f3f;
+}
+
+
+body {
+    background-color: #eed3d3;
+    margin: 0;   
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: #d83f3f;
+}
+
+header {
+    background-color: #b88cae;
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Mukta', sans-serif;
+}
+
+header a:hover {
+    color: #d83f3f;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.274),
+        rgba(0, 0, 0, 0.233)
+    )
+    ,url("media/macarons3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#somos-tapitas .container {
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#nuestros-box {
+    background-color: #c2aabc;
+    color: #000000;
+    text-align: center;
+    
+}
+
+#nuestros-box .container {
+    padding: 100px 12px;
+}
+
+#nuestros-box h2 {
+    margin-top: 0;
+}
+
+#nuestros-box p {
+    display: none;
+}
+
+#nuestros-box .cartas {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.cartas:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/macarons4.jpg");
+}
+
+.cartas:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/macarons4.jpg");
+}
+
+.cartas:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/macarons4.jpg");
+}
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 100px 12px;
+
+}
+
+#caracteristicas li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#caracteristicas ul {
+    padding: 0;
+}
+
+.ColumnUsP p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.10em;
+}
+
+#reserva-ahora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #b88cae;
+    color: #ffffff;
+    height: 40vh;
+}
+
+footer p {
+    margin: 0;
+    padding: 12;
+    color: #b88cae;
+    -webkit-text-stroke: 1px rgb(255, 155, 155);
+    font-size: 0.8em;
+}
+
+footer .container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+footer .container ul{
+    text-align: center;
+}
+
+footer .container li{
+    display: inline-block;
+    font-size: 20px;
+    width: 120px;
+    height: 100px;
+}
+
+footer .container img{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+@media (min-width: 720px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 4em;
+    }
+
+#somos-tapitas .container {
+    display: flex;
+    justify-content: center;
+}
+
+#somos-tapitas .container-list {
+    display: flex;
+    justify-content: center;
+}
+
+#somos-tapitas .texto {
+    width: 50%;
+    max-width: 600px;
+    padding: 0px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#somos-tapitas .texto p{
+    text-align: initial;
+}
+
+#somos-tapitas .texto-list {
+    width: 50%;
+    max-width: 600px;
+    text-align: justify;
+    padding: 0px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#somos-tapitas .texto-list ul{
+    padding: 0;
+}
+
+#somos-tapitas .img-container {
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.13),
+        rgba(0, 0, 0, 0.089) 
+    ), url("media/macarons5.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 500px;
+}
+
+#nuestros-box .boxes {
+    display: flex;
+    justify-content: center;
+
+}
+ 
+#nuestros-box p {
+    display: block;
+    margin-bottom: 30px;
+}
+
+#nuestros-box h3 {
+    margin-top: 0;
+}
+
+#nuestros-box .cartas {
+    padding: 15px;
+}
+
+
+#caracteristicas .container {
+    text-align: initial;
+}
+
+#caracteristicas ul {
+    margin-left: 100px;
+}
+
+}
+
+/* INDEX END*/
+
+/* SABORES START*/
+
+#nuestros-box-nobanner {
+    background-color: #c2aabc;
+    color: #000000;
+    text-align: center;
+}
+
+#nuestros-box-nobanner .container {
+    padding: 150px 12px;
+    padding-bottom: 10px;
+}
+
+#nuestros-box-nobanner h2 {
+    margin-top: 0;
+}
+
+#nuestros-box-nobanner p {
+    display: none;
+}
+
+#nuestros-box-nobanner .cartas {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+#nuestros-box-nobanner .catalogo {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 15px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+#nuestros-box-nobanner .textoCatalogo {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 15px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 0px 12px;
+    padding: 0;
+}
+
+.textoCatalogo p{
+    font-family: 'Ms Madi', cursive;
+    font-size: 1.7em;
+}
+
+#nuestros-box .boxes2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.catalogo:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/sabor1.jpg");
+}
+
+.catalogo:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/sabor2.jpg");
+}
+
+.catalogo:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/sabor3.jpg");
+}
+
+.boxes2 .catalogo:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/sabor4.jpg");
+}
+
+.boxes2 .catalogo:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/sabor5.jpg");
+}
+
+.boxes2 .catalogo:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/sabor6.jpg");
+}
+
+@media (min-width: 720px) {
+
+#nuestros-box-nobanner .boxes {
+    display: flex;
+    justify-content: center;
+
+}
+
+#nuestros-box-nobanner .boxes2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+#nuestros-box-nobanner .boxesText {
+    display: flex;
+    justify-content: center;
+}
+ 
+#nuestros-box-nobanner p {
+    display: block;
+    margin-bottom: 30px;
+}
+
+#nuestros-box-nobanner h3 {
+    margin-top: 0;
+}
+
+#nuestros-box-nobanner .carta {
+    padding: 15px;
+}
+
+#nuestros-box-nobanner .catalogo{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+
+#nuestros-box-nobanner .textoCatalogo{
+    display: flex;
+    justify-content: center;
+}
+
+}
+
+@media (min-width: 400px) {
+
+
+#nuestros-box-nobanner .boxes {
+    display: flex;
+    justify-content: center;
+
+}
+
+#nuestros-box-nobanner .boxes2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+#nuestros-box-nobanner .boxesText {
+    display: flex;
+    justify-content: center;
+}
+ 
+#nuestros-box-nobanner p {
+    display: block;
+    margin-bottom: 30px;
+}
+
+#nuestros-box-nobanner h3 {
+    margin-top: 0;
+}
+
+#nuestros-box-nobanner .carta {
+    padding: 15px;
+}
+
+#nuestros-box-nobanner .catalogo{
+    display: flex;
+    justify-content: center;
+}
+
+#nuestros-box-nobanner .textoCatalogo{
+    display: flex;
+    justify-content: center;
+}
+
+}
+/* SABORES END*/
+
+/* PRODUCTOS START*/
+
+#boxescarousel {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    margin: 0 auto 0 auto;
+    height: fit-content;
+  }
+
+  #carousel::-webkit-scrollbar {
+    display: none; 
+    overflow-x: auto;
+  }
+  
+  .item {
+    min-width: 300px;
+    min-height: 20vh;
+    margin: 15px;
+    text-align: center;
+    border-radius: 7px;
+  }
+
+  #nuestros-box-nobanner .catalogoCarousel {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 15px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.catalogoCarousel:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll1.jpg");
+}
+
+.catalogoCarousel:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll2.jpg");
+}
+
+.catalogoCarousel:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll3.jpg");
+}
+
+.catalogoCarousel:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll4.jpg");
+}
+
+.catalogoCarousel:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll5.jpg");
+}
+
+.catalogoCarousel:nth-child(6){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll6.jpg");
+}
+
+.catalogoCarousel:nth-child(7){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll7.jpg");
+}
+
+.catalogoCarousel:nth-child(8){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll8.jpg");
+}
+
+.catalogoCarousel:nth-child(9){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll1.jpg");
+}
+
+.catalogoCarousel:nth-child(10){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll2.jpg");
+}
+
+.catalogoCarousel:nth-child(11){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll3.jpg");
+}
+
+.catalogoCarousel:nth-child(12){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll4.jpg");
+}
+
+.catalogoCarousel:nth-child(13){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll5.jpg");
+}
+
+.catalogoCarousel:nth-child(14){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll6.jpg");
+}
+
+.catalogoCarousel:nth-child(15){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll7.jpg");
+}
+
+.catalogoCarousel:nth-child(16){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.205),
+        rgba(0,0,0,0.205)
+    )
+    ,url("media/scroll8.jpg");
+}
+
+.sectionProd{
+    background-color: rgba(247, 188, 229, 0.116); 
+}
+
+.RowProd{
+    display: table;
+    width: 100%; 
+    table-layout: fixed; 
+    border-spacing: 10px; 
+    text-align: center;
+}
+
+.RowProd div{
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: top;
+}
+
+.RowProd ul{
+width: 345px;
+text-align: start;
+}
+
+.RowProd li{
+    list-style-type: none;
+    display: flex;
+}
+
+.RowProd img{
+    margin: 20px;
+}
+
+
+@media (min-width: 320px) {
+
+#nuestros-box-nobanner .boxescarousel {
+    display: flex;
+    justify-content: center;
+
+}
+
+#RowProd {
+    display: flex;
+    justify-content: center;
+
+}
+
+.RowProd div{
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: top;
+}
+
+.RowProd ul{
+width: 345px;
+text-align: start;
+}
+
+.RowProd li{
+    list-style-type: none;
+    display: flex;
+}
+
+.RowProd ul li p {
+    font-size: 1em;
+}
+
+.RowProd img{
+    margin: 20px;
+}
+
+
+}
+
+/* PRODUCTOS END*/
+
+/* NOSOTROS START*/
+
+.gridContainer{
+
+    width: 90%;
+	max-width: 1000px;
+	margin: 0px auto;
+    padding: 150px 12px;
+    padding-bottom: 0;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: "header header header"
+						 "contenido contenido sidebar"
+						 "profesionales instalaciones sidebar"
+						 "footer footer footer";
+}
+
+.gridContainer .contactDiv{
+	grid-area: header;
+    text-align: center;
+
+}
+
+.gridContainer .RowUs{
+	grid-column: span 2;
+    display: flex;
+    
+}
+
+.gridContainer .ColumnUsP {
+	grid-column: 3 / 4;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	grid-area: sidebar;
+    font-family: 'Ms Madi', cursive;
+    font-size: 1em;
+    margin: 0px 15px;
+    width: 4000px;
+}
+
+.gridContainer .ColumnUsP p{
+	margin: 0px;
+    text-align: initial;
+    padding: 10px 50px;
+}
+
+.gridContainer .profesionales,
+.gridContainer .instalaciones {
+	background: #55a8fd;
+	color: #fff;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    height: 250px;
+    margin: 50px 0px;
+}
+
+.gridContainer .profesionales {
+	grid-area: profesionales;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.295),
+        rgba(0, 0, 0, 0.295) 
+    ), url("media/macarons1.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.gridContainer .instalaciones {
+	grid-area:instalaciones;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.295),
+        rgba(0, 0, 0, 0.295) 
+    ), url("media/macarons2.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (min-width: 966px) {
+
+    .gridContainer .ColumnUsImg {
+        grid-column: 1 / 2;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100px;
+        grid-area: sidebar;
+        background-image:linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.13),
+            rgba(0, 0, 0, 0.089) 
+        ), url("media/macarons6.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 370px;
+        width: 3000px;
+    }
+
+}
+
+/* NOSOTROS END*/
+
+/* CONTACTO START*/
+
+.contact-nobanner{
+    text-align: center;
+    
+}
+
+#contact-nobanner .container {
+    padding: 70px 12px;
+    padding-bottom: 10px;
+}
+
+#contact-nobanner h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#contact-nobanner p {
+    display: none;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+#form {
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: #ee6a6a24;
+  outline: none;
+  color: #726659;
+  
+  border: solid 2px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: #ee6a6a24;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 2px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+
+@media (min-width: 720px) {
+    
+
+    .contact-nobanner{
+        text-align: center;
+        
+    }
+    
+    #contact-nobanner .container {
+        padding: 230px 12px;
+        padding-bottom: 10px;
+    }
+    
+    #contact-nobanner h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    #contact-nobanner p {
+        display: none;
+    }
+
+}
+
+/* CONTACTO END*/
+
+/* INDEX BST START */
+
+.btDrop1{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid #b86969;
+    box-shadow: 2px 2px 10px #b86969;
+    color:aliceblue;
+    background-color: #b88cae;
+}
+
+#btsDropSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #efc8e6;
+    color: #ffffff;
+    height: 25vh;
+}
+
+#btsDpMenu{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid #b86969;
+    box-shadow: 2px 2px 10px #b86969;
+    color:aliceblue;
+    background-color: #f3f8cc; 
+}
+
+.pagination .page-link{
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid #b86969;
+    color: aliceblue;
+    background-color: #b88cae;
+}
+
+/* INDEX BST END */
+
+/* SABORES BST START */
+
+  
+  h4 {
+    margin: 2rem 0rem 1rem;
+  }
+  
+
+  .table-image td{
+      vertical-align: middle;
+  }
+
+  .table-image th{
+    vertical-align: middle;
+}
+
+#btsTableSection {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #efc8e6;
+    color: #ffffff;
+    height: 50vh;
+}
+
+@media (min-width: 320px) {
+
+    h4 {
+        margin: 2rem 0rem 1rem;
+      }
+      
+    
+      .table-image td{
+          vertical-align: middle;
+      }
+    
+      .table-image th{
+        vertical-align: middle;
+    }
+    
+    #btsTableSection {
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #efc8e6;
+        color: #ffffff;
+        height: 50vh;
+    }
+
+}
+
+/* SABORES BST END */
+
+/* PRODUCTOS BST START */
+
+#myRowProd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navProd{
+    background-color: #c2aabc;
+    color: #000000;
+}
+
+/* PRODUCTOS BST END */
+
+/* NOSOTROS BST START */
+
+#collapseBack{
+    background-color: #c2aabc; 
+}
+
+
+/* NOSOTROS BST END */
+
